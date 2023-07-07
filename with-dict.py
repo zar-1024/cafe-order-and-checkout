@@ -37,24 +37,5 @@ tables = {
     3: Table([ICECREAM])
 }
 
-def get_bill(table_number):
-    if table_number not in tables:
-        print("This table is not occupied!")
-        return 0
-    return tables[table_number].get_bill()
-
-def add_item(table_number, item):
-    if table_number not in tables:
-        tables[table_number] = Table([item])
-    else:
-        tables[table_number].add_item(item)
-
-def add_items(table_number, items):
-    for i in items:
-        tables[table_number].add_item(i)
-
-def remove_item(table_number, item):
-    if table_number not in tables:
-        print('This table is not occupied!')
-    else:
-        tables[table_number].remove
+for t in tables:
+    print(tables[t].get_bill())
