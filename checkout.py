@@ -1,8 +1,4 @@
-import pandas as pd
-from openpyxl import workbook
-from openpyxl.reader.excel import load_workbook
 import openpyxl
-from openpyxl import load_workbook
 
 checkout_table_num= float(input("input the table number: "))
 
